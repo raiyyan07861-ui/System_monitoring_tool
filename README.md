@@ -1,103 +1,88 @@
-Intelligent Linux Maintenance Utility (C++ Project)
-Automated System Hygiene & Backup Manager for Linux
-Table of Contents
+# Intelligent Linux Maintenance Utility (C++ Project)
 
-Overview
+### Automated System Hygiene & Backup Manager for Linux
 
-Features
+---
 
-Tech Stack
+## 📌 Overview
+This project is a modern C++20 based command line tool that automates daily Linux maintenance operations such as backup creation, junk cleanup, system information display and disk usage monitoring.  
+This tool reduces repeated manual administration work and keeps the system clean and organized.
 
-System Flow Summary
+> A basic shell script prototype was initially created before converting the final stable version into C++.
 
-Setup & Installation
+---
 
-Usage Instructions
+## 🚀 Features
+- Shows CPU info, RAM usage and System uptime
+- Creates timestamp based backup folders
+- Cleans temporary user junk from `/tmp`
+- Displays disk usage summary
+- Auto deletes logs + backups older than 7 days
+- Fully menu driven CLI program
 
-Directory Structure
+---
 
-Future Enhancements
+## 🛠️ Tech Stack
 
-Contribution
+| Area | Technology Used |
+|------|-----------------|
+| Language | C++20 |
+| Compiler | g++ |
+| Operating System | Linux |
+| Libraries | `<filesystem>`, `<chrono>`, Standard Library |
 
-License
+---
 
-Overview
+## 🔄 System Flow
+1. Program launches with menu interface  
+2. User selects required option  
+3. Selected module executes logic  
+4. Logs / backup / cleanup tasks executed  
+5. Auto clean periodically removes stale data
 
-This project is a C++20 based terminal application that simplifies routine Linux administration and housekeeping tasks.
-It helps users quickly view system insights, remove unnecessary temporary files, manage disk usage, maintain logs, and perform timestamp-based backups — all from a single unified menu driven program.
+---
 
-This tool was initially prototyped using a Bash shell-script implementation and later refactored to modern C++ using <filesystem> for improved reliability, portability and performance.
+## ⚙️ Installation & Run
 
-Features
-
-Display live system details (CPU info, RAM usage, Uptime)
-
-Generate secure automatic file backups with timestamp folder creation
-
-Clean temporary junk files from /tmp
-
-Show disk usage summary for quick decision making
-
-Auto delete outdated backups & logs older than 7 days
-
-Lightweight CLI + low resource consumption suitable for everyday use
-
-Tech Stack
-Area	Technology Used
-Language	C++20
-Libraries	filesystem, chrono, STL
-OS Environment	Linux distributions (tested on Ubuntu based variants)
-Compiler	g++
-System Flow Summary
-
-Start program → menu screen displayed
-
-User selects the action they want to perform
-
-Corresponding module executes (backup/info/cleanup/storage-report)
-
-Program maintains logs for transparency
-
-Old stale data is auto removed periodically
-
-Setup & Installation
-git clone <your >
-cd <project>
-
+```bash
+git clone <your_repository_link>
+cd <project_folder_name>
 g++ -std=c++20 main.cpp -o maintainer
 ./maintainer
 
-Usage Instructions
-Task	How to Perform
-Check system info	Run tool → choose option for System Stats
-Create backup	Select Backup option → files get copied with timestamp
-Clean temp space	Select Clean option to remove user temporary files
-View disk usage	Select Disk Usage option
-Auto cleanup	Automatically handled inside code (7 days)
-Directory Structure
+
+
+## Folder Structure
 |
-|-- src/            # source files if separated
-|-- backups/        # auto created folders for backups
-|-- logs/           # logging of operations performed
+|-- src/
+|-- backups/
+|-- logs/
 |-- main.cpp
 |-- README.md
 
-Future Enhancements
 
-Add live usage monitoring graphs (ncurses / tui based)
 
-Add user level backup include/exclude filters
 
-Optional cloud backup sync (Drive/S3)
+## Usage Guide
 
-Web dashboard front-end in future version
+| Operation        | Action                                                    |
+| ---------------- | --------------------------------------------------------- |
+| System Info      | Choose System Info option                                 |
+| Backup           | Choose Backup option to auto create timestamp folder      |
+| Clean Temp Files | Select Clean Temp option                                  |
+| Disk Usage       | Select Disk Usage option                                  |
+| Auto Cleaner     | Automatically deletes old files (no user action required) |
+
+
+
+
+Future Improvements
+Add monitoring TUI dashboard
+Add cloud sync option for secure backup
+Provide GUI front-end version
+
+
 
 Contribution
+Contributions & PRs are welcome.
 
-Pull Requests / Issue reporting is appreciated.
-Follow standard formatting (clang-format preferred).
-
-License
-
-MIT License.
