@@ -49,8 +49,7 @@ git clone <your_repository_link>
 cd <project_folder_name>
 g++ -std=c++20 main.cpp -o maintainer
 ./maintainer
-
-
+ ---
 
 ## Folder Structure
 |
@@ -60,7 +59,7 @@ g++ -std=c++20 main.cpp -o maintainer
 |-- main.cpp
 |-- README.md
 
-
+---
 
 
 ## Usage Guide
@@ -74,14 +73,14 @@ g++ -std=c++20 main.cpp -o maintainer
 | Auto Cleaner     | Automatically deletes old files (no user action required) |
 
 
-
+---
 
 Future Improvements
 Add monitoring TUI dashboard
 Add cloud sync option for secure backup
 Provide GUI front-end version
 
-
+---
 
 Contribution
 Contributions & PRs are welcome.
