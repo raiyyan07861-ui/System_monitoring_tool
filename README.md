@@ -41,46 +41,21 @@ This tool reduces repeated manual administration work and keeps the system clean
 
 ---
 
-##  Installation & Run
+##  Installation & Run ## Folder Structure
 
 ```bash
 git clone <your_repository_link>
 cd <project_folder_name>
 g++ -std=c++20 main.cpp -o maintainer
 ./maintainer
-bash```
-
-## Folder Structure
-|
-|-- src/
-|-- backups/
-|-- logs/
-|-- main.cpp
-|-- README.md
-
----
-
-
-## Usage Guide
-
-| Operation        | Action                                                    |
-| ---------------- | --------------------------------------------------------- |
-| System Info      | Choose System Info option                                 |
-| Backup           | Choose Backup option to auto create timestamp folder      |
-| Clean Temp Files | Select Clean Temp option                                  |
-| Disk Usage       | Select Disk Usage option                                  |
-| Auto Cleaner     | Automatically deletes old files (no user action required) |
 
 
 ---
-
-Future Improvements
-Add monitoring TUI dashboard
-Add cloud sync option for secure backup
-Provide GUI front-end version
-
----
-
-Contribution
-Contributions & PRs are welcome.
+project_folder_name/
+│
+├── src/              # Source code files (if modularized)
+├── backups/          # Auto-generated backups stored here
+├── logs/             # Log files and system cleanup records
+├── main.cpp          # Main source file
+└── README.md         # Documentation file
 
