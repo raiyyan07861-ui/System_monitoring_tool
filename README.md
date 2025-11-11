@@ -4,15 +4,14 @@
 
 ---
 
-## 📌 Overview
+##  Overview
 This project is a modern C++20 based command line tool that automates daily Linux maintenance operations such as backup creation, junk cleanup, system information display and disk usage monitoring.  
 This tool reduces repeated manual administration work and keeps the system clean and organized.
 
-> A basic shell script prototype was initially created before converting the final stable version into C++.
 
 ---
 
-## 🚀 Features
+##  Features
 - Shows CPU info, RAM usage and System uptime
 - Creates timestamp based backup folders
 - Cleans temporary user junk from `/tmp`
@@ -22,7 +21,7 @@ This tool reduces repeated manual administration work and keeps the system clean
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Area | Technology Used |
 |------|-----------------|
@@ -33,7 +32,7 @@ This tool reduces repeated manual administration work and keeps the system clean
 
 ---
 
-## 🔄 System Flow
+##  System Flow
 1. Program launches with menu interface  
 2. User selects required option  
 3. Selected module executes logic  
@@ -42,7 +41,7 @@ This tool reduces repeated manual administration work and keeps the system clean
 
 ---
 
-## ⚙️ Installation & Run
+##  Installation & Run
 
 ```bash
 git clone <your_repository_link>
