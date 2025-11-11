@@ -48,7 +48,7 @@ git clone <your_repository_link>
 cd <project_folder_name>
 g++ -std=c++20 main.cpp -o maintainer
 ./maintainer
- ---
+ ---bash
 
 ## Folder Structure
 |
